@@ -65,7 +65,7 @@ void trapezoide(int tipo, double a, double b, int n, int threads) {
 
 int main(int argc, char* argv[]) {
     if (argc <= 3) {
-        printf(" >> ERROR: Falta de parámetros correctos.\n");
+        printf(" Falta de parámetros correctos.\n");
         return 1;
     }
 
@@ -75,7 +75,7 @@ int main(int argc, char* argv[]) {
     int threads = atoi(argv[3]);
     
     if (n % threads) {
-        printf(" >> ERROR: La cantidad de trapezoides (10e6) debe ser múltiplo de los threads ingresados.\n");
+        printf("  La cantidad de trapezoides  debe ser múltiplo de los threads ingresados.\n");
         return 1;
     }
 
